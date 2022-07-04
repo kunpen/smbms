@@ -12,21 +12,17 @@ public class Bill {
     private BigDecimal productCount; //商品数量
     private BigDecimal totalPrice; //总金额
     private Integer isPayment; //是否支付
-    private Integer providerId; //供应商ID
     private Integer createdBy; //创建者
+
+
     private Date creationDate; //创建时间
     private Integer modifyBy; //更新者
     private Date modifyDate;//更新时间
 
-    private String providerName;//供应商名称
 
 
-    public String getProviderName() {
-        return providerName;
-    }
-    public void setProviderName(String providerName) {
-        this.providerName = providerName;
-    }
+
+
     public Integer getId() {
         return id;
     }
@@ -76,12 +72,7 @@ public class Bill {
         this.isPayment = isPayment;
     }
 
-    public Integer getProviderId() {
-        return providerId;
-    }
-    public void setProviderId(Integer providerId) {
-        this.providerId = providerId;
-    }
+
     public Integer getCreatedBy() {
         return createdBy;
     }

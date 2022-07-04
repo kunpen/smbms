@@ -60,10 +60,13 @@ public class BaseDao {
     public static int execute(Connection connection,String sql,Object[] params,PreparedStatement preparedStatement) throws SQLException {
         preparedStatement = connection.prepareStatement(sql);
 
+
+
         for (int i = 0; i < params.length; i++) {
             preparedStatement.setObject(i+1,params[i]);
 
         }
+        System.out.println(preparedStatement);
         int updateRows = preparedStatement.executeUpdate();
         return updateRows;
 

@@ -11,8 +11,10 @@ public class Provider {
     private String proFax; //供应商传真
     private Integer createdBy; //创建者
     private Date creationDate; //创建时间
-    private Integer modifyBy; //更新者
     private Date modifyDate;//更新时间
+    private Integer modifyBy; //更新者
+
+
     public Integer getId() {
         return id;
     }
